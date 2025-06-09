@@ -1,0 +1,90 @@
+.artStyle {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    justify-content: center;
+    align-content: center;
+
+    background-color: #f6ebd5;
+    background-image: url('../../assets/paper-texture.jpg');
+    background-blend-mode: multiply;
+}
+
+.artIma {
+    width: 800px;
+    margin: 0 auto;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 2fr); 
+}
+
+.imagenes {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #c6a3d2;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    background-image: url('../../assets/paper-texture.jpg');
+    background-blend-mode:multiply;
+
+
+}
+
+.hA{
+    width: 100%;
+    text-align: center;
+}
+
+.pA{
+    text-align: justify;
+    color: white;
+    font-weight: normal;
+}
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.imagenes::after {
+  content: '';
+  position: absolute;
+  top: -5px;   
+  left: -5px;  
+  right: -5px;
+  bottom: -5px; 
+  border: 10px solid green; 
+  pointer-events: none;
+  border-image: url('../../assets/lila.svg') 30 stretch; 
+   z-index: 2;
+}
+
+.imagenesv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #2c8a84c7;
+    padding: 20px;
+    margin: 20px;
+    background-image: url('../../assets/paper-texture.jpg');
+    background-blend-mode:multiply;
+
+}
+
+.imagenesv::after {
+  content: '';
+  position: absolute;
+  top: -5px;   
+  left: -5px;  
+  right: -5px;
+  bottom: -5px; 
+  border: 10px solid green; 
+  pointer-events: none;
+  border-image: url('../../assets/aqua.svg') 30 stretch; 
+   z-index: 2;
+}

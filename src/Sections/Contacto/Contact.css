@@ -1,0 +1,22 @@
+.contactStyle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    padding-bottom: 100px;
+
+    background-color: #f6ebd5;
+    background-image: url('../../assets/paper-texture.jpg');
+    background-blend-mode: multiply;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
+    justify-content: center;
+    width: 80%;
+
+}
