@@ -1,12 +1,39 @@
-# React + Vite
+# Portafolio Web 
+https://calicheoficial.lat/Melisa/Portafolio/index.html
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es un proyecto personal desarrollado con **React** y **Vite**, que funciona como portafolio para mostrar mis habilidades, proyectos e ilustraciones digitales. Incluye una barra de navegación, secciones informativas y una galería visual.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologías utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [Bun](https://bun.sh/) y [npm](https://www.npmjs.com/) como gestores de dependencias
+- [SVGR](https://react-svgr.com/) para importar archivos SVG como componentes de React
+- CSS puro (sin frameworks como Tailwind o Bootstrap)
 
-## Expanding the ESLint configuration
+## 📁 Estructura del proyecto
+src/
+├── assets/ # Imágenes y SVGs
+├── Components/ # Componentes reutilizables (Header, Navbar, etc.)
+├── Sections/ # Secciones principales del sitio (AboutMe, Projects, etc.)
+└── main.jsx # Punto de entrada principal
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## 🧑‍🎨 Ilustraciones
+
+En la sección de arte muestro ilustraciones personales y colaborativas, algunas adaptadas para aplicaciones móviles con fondos transparentes y personajes personalizados.
+
+## 📦 Instalación
+
+Requisitos:
+- Tener [Bun](https://bun.sh/) instalado.
+
+```bash
+bun install
+bun dev
+```
+
+```bash
+npm install
+npm run dev
+```
