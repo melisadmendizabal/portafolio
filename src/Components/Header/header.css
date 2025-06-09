@@ -1,44 +1,24 @@
-.headerStyle {
-    position: relative;
-    margin: 10px;
-
-    height: 60px;
-    width: 100px;
-    background-color: rgb(164, 43, 43);
-
-    border-image: url('../../assets/lineas.png') 30 round;   
-}
-
-.headerStyle::after {
-  content: ''; /* Necesario para crear el pseudo-elemento */
-  position: absolute;
-  top: -5px;   /* Posición del borde por encima del elemento */
-  left: -5px;  /* Alineación en los bordes */
-  right: -5px;
-  bottom: -5px; /* Aumentamos el tamaño del borde */
-  border: 5px solid green; /* Borde de color transparente */
-  border-radius: 20px; /* Aseguramos que el borde tenga bordes redondeados */
-  border-image: url('../../assets/lineas.png') 30 stretch; /* La imagen que usarás como borde */
-   /* Pone el borde debajo del contenido */
-   z-index: 2;
-}
-
 
 
 .b {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
   position: relative;
   margin: 20px;
-  height: 60px;
+  height: 70px;
 
-  width: 20%;
-  min-width: 500px;
-  background-color: #c96fcfc4;
+
+  width: 90%;
+  max-width: 800px;
+
+  background-color: #784899;
   
-
   color: white;
-
-  text-align: center;
- 
+  background-image: url('../../assets/paper-texture.jpg');
+    background-blend-mode:multiply;
 }
 
 
@@ -51,37 +31,46 @@
   bottom: -5px; /* Aumentamos el tamaño del borde */
   border: 10px solid green; /* Borde de color transparente */
    /* Aseguramos que el borde tenga bordes redondeados */
-  border-image: url('../../assets/lapiz.svg') 30 stretch; /* La imagen que usarás como borde */
+  border-image: url('../../assets/lila.svg') 30 stretch; /* La imagen que usarás como borde */
    /* Pone el borde debajo del contenido */
    z-index: 2;
+   pointer-events: none;
 }
 
-
-.aaa {
-
-  width: 100px;
-  height: 60px;
-  background-color: #c96fcfc4;
-  color: rgb(59, 168, 108);
-  
-  text-align: center;
- 
-  
+.iconosH {
+  height: 30px;
+  color: #fdf5e1;
 }
 
-.svg-border {
-  position: absolute;
-  top: -5; left: 0; right: 0; bottom: 0;
-  pointer-events: none; /* Para que el SVG no interfiera con clicks */
-  width: 30px;
-  height: 100px;
-  
+.sectionsP{
+  margin: 0px 0px;
+  padding: 0px 10px;
+  background-color: rgba(153, 226, 249, 0.314);
+}
 
-  stroke: currentColor; /* Esto permite que el color venga de CSS */
-  fill: none; /* Solo borde */
-  stroke-width: 5px;
+.buttonI {
+  background-color: transparent;
+  border: 0px;
+  margin: 0px 20px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
 
-  z-index: 10;
-  color: rgb(243, 200, 200); /* Cambia aquí el color del borde */
+}
+
+.buttonI:hover{
+  background-color: rgba(167, 92, 232, 0.71);
+  transform: scale(1.1);
+}
+
+.b button:nth-child(odd){
+  transform: rotate(5deg);
+}
+
+.b button:nth-child(odd):hover{
+  transform: rotate(5deg) scale(1.1);
+}
+
+.b button:nth-child(even):hover{
+  transform: rotate(-5deg) scale(1.1);
 }
 

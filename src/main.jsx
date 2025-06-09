@@ -6,7 +6,9 @@ import { FullSections } from './Sections/FullSections/FullSections.jsx'
 
 
 createRoot(document.getElementById('root')).render(
+  
   <StrictMode>
+    
     <FullSections></FullSections>
     
   </StrictMode>,

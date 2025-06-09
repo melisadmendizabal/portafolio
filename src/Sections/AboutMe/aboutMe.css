@@ -1,7 +1,7 @@
 .aboutMeStyle{
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 95%;
 
     background-color: #f6ebd5;
     background-image: url('../../assets/paper-texture.jpg');
@@ -9,11 +9,11 @@
 }
 
 .title{
-    text-align: center;
-    font-size: 2rem;
-    color: rgb(93, 33, 76);
+    height: 60px;
+    transform: rotate(-2deg);
+  
+    background-color: rgba(184, 158, 236, 0.584);
 }
-
 .cardsStyle {
     width: 65%;
     padding: 20px;
@@ -23,13 +23,31 @@
 }
 
 .rowCards{
+
     display: flex;
     flex-direction: row;
 }
 
 .imagenAboutMe{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
     width: 35%;
+    align-items: center;
+    justify-content: center;
 
     /*background-color: rgb(42, 147, 165);*/
 
+}
+
+.yo {
+    height: 500px;
+    width: 500px;
+}
+
+.hola {
+
+    margin-right: 200px;
+    height: 200px;
+    width: 200px;
 }

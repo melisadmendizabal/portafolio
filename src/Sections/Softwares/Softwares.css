@@ -1,0 +1,32 @@
+.softStyle {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+
+    background-color: #f6ebd5;
+    background-image: url('../../assets/paper-texture.jpg');
+    background-blend-mode: multiply;
+
+}
+
+.icons {
+    width: 600px;
+    display: grid;
+    grid-template-columns: repeat(6, 0.5fr); 
+    
+}
+
+.iconos {
+    height: 50px;
+    color: rgb(43, 80, 122);
+}
+
+@media screen and (max-width: 1000px) {
+  .icons {
+    grid-template-columns: repeat(4, 1fr);  /* 2 columnas en pantallas más pequeñas */
+  }
+}

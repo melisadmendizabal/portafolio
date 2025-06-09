@@ -1,10 +1,12 @@
 import { CardMe } from '../../Components/CardMe/CardMe'
+import yo from '../../assets/pictures/yo.png'
+import hola from '../../assets/pictures/melisa.png'
 import { Carpeta } from '../../Components/Carpetas/Carpeta'
 import './aboutMe.css'
 
 export const AboutMe = () => {
     return(
-        <section className='aboutMeStyle'>
+        <section className='aboutMeStyle' id='sobremi'>
             <aside className='cardsStyle'> 
                 <h2 className='title'>
                     Un poco sobre mi 
@@ -46,7 +48,10 @@ export const AboutMe = () => {
 
 
             </aside>
-            <section className='imagenAboutMe'> </section>
+            <section className='imagenAboutMe'> 
+                <img src= {yo} className='yo'></img>
+                <img src= {hola} className='hola'></img>
+            </section>
 
 
         </section>

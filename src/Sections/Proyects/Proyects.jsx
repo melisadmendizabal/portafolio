@@ -9,7 +9,7 @@ import './proyects.css'
 
 export const Proyects = () => {
     return (
-        <section className='proyectStyle'>
+        <section className='proyectStyle' id='codigo'>
             <h2 className='title'>Algunos Proyectos</h2>
             <article className='carpetas'>
                 <Carpeta 
