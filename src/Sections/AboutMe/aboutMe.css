@@ -1,0 +1,35 @@
+.aboutMeStyle{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    background-color: #f6ebd5;
+    background-image: url('../../assets/paper-texture.jpg');
+    background-blend-mode: multiply;
+}
+
+.title{
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(93, 33, 76);
+}
+
+.cardsStyle {
+    width: 65%;
+    padding: 20px;
+
+    /*background-color: brown;*/
+
+}
+
+.rowCards{
+    display: flex;
+    flex-direction: row;
+}
+
+.imagenAboutMe{
+    width: 35%;
+
+    /*background-color: rgb(42, 147, 165);*/
+
+}

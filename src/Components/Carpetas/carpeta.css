@@ -1,0 +1,223 @@
+.backCarpeta {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 400px;
+    margin: 0px 20px;
+    
+    
+}
+
+.contentAnimation{
+  height: 400px;
+  width: 400px;
+  cursor: help;
+}
+
+
+.animatedCarpeta{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  height: 300px;
+  width: 400px;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  transition: .4s;
+}
+
+.atrasCarpeta {
+  position: absolute;
+  margin-top: 20px;
+  
+  width: 400px;
+  height: 250px;
+  background: #cf4a43;
+  border-radius: 10px;
+  z-index: 0;
+   background-image: url('../../assets/paper-texture.jpg');
+    background-blend-mode:multiply;
+}
+
+
+.hoja {
+  /*
+  left: 20px;
+  bottom: 0px;
+  */
+  position: absolute;
+  display: flex;
+  justify-content: start;
+  width: 350px;
+  height: 270px;
+  background: white;
+  z-index: 1;
+  overflow: hidden;
+  -webkit-transition: .4s .2s;
+  -moz-transition: .4s .2s;
+  transition: .4s .2s;
+  transform: translateY(-10px);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+   background-image: url('../../assets/paper-texture.jpg');
+    background-blend-mode:multiply;
+}
+
+.hoja2 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+ 
+
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 250px;
+  background: rgb(255, 255, 255);
+  z-index: 1;
+  overflow: hidden;
+  -webkit-transition: .4s .2s;
+  -moz-transition: .4s .2s;
+  transition: .4s .2s;
+  transform: translateY(5px) translate(10px);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+   background-image: url('../../assets/paper-texture.jpg');
+    background-blend-mode:multiply;
+    box-shadow: 5px 0px 10px 5px rgba(142, 71, 71, 0.323)
+}
+
+.h3Carpetas {
+  margin: 0px;
+  padding: 0px;
+  color: #7e4d61;
+}
+
+.des {
+  margin: 0px;
+  padding: 10px;
+  font-size: 16px;
+  text-align: justify;
+  color: #7e4d61;
+}
+
+a{
+  font-weight: bold;
+  color: #7e4d61;
+}
+
+img {
+  margin: 30px 20px;
+  width: 300px;
+  opacity: 80%;
+
+}
+
+.adelante {
+  position: absolute;
+  margin-top: 10px;
+  
+  width: 400px;
+  height: 260px;
+  border-radius: 10px;
+
+  -webkit-transform-origin: 50% 100%;
+  -webkit-transition: transform .4s .4s, z-index .2s .4s;
+  -moz-transform-origin: 50% 100%;
+  -moz-transition: transform .4s .4s, z-index .2s .4s;
+  transform-origin: 50% 100%;
+  transition: transform .4s .4s, z-index .2s .4s;
+  
+  
+  z-index: 2;
+}
+
+.pico {
+  display: flex;
+  height: 40px;
+  width: 150px;
+  background-color: blue;
+  border-radius: 10px 10px 0px 0px;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../../assets/paper-texture.jpg');
+  background-blend-mode:multiply;
+}
+
+.nameCarpet{
+  padding: 0px 10px;
+  background-color: rgba(173, 216, 230, 0.593);
+  color: rgb(87, 31, 31);
+}
+
+.tapa {
+  width: 400px;
+  height: 220px;
+  border-radius: 0px 10px 10px 10px;
+  background-color: brown;
+  background-image: url('../../assets/paper-texture.jpg');
+  background-blend-mode:multiply;
+}
+
+.atrasCarpeta.purple {
+  background-color: #9b5ab1;
+}
+
+.pico.purple {
+  background-color: #c59bd3;
+}
+
+.tapa.purple {
+  background-color: #c59bd3;
+}
+
+.atrasCarpeta.pink {
+  background-color: #a15072;
+}
+
+.pico.pink {
+  background-color: #db81a6;
+}
+
+.tapa.pink {
+  background-color: #db81a6;
+}
+
+.atrasCarpeta.blue {
+  background-color: #5293a5;
+}
+
+.pico.blue {
+  background-color: #81c8db;
+}
+
+.tapa.blue {
+  background-color: #81c8db;
+}
+
+.contentAnimation:hover .animatedCarpeta {
+  transform: translateY(-50px);
+  -webkit-transform: translateY(-50px);
+  -moz-transform: translateY(-50px);
+}
+
+
+.contentAnimation:hover .animatedCarpeta .adelante{
+  transition: transform .4s, z-index .2s;
+  transform: rotateX(180deg);
+  -webkit-transition: transform .4s, z-index .2s;
+  -webkit-transform: rotateX(180deg);
+  -moz-transition: transform .4s, z-index .2s;
+  -moz-transform: rotateX(180deg);
+  z-index: 0;
+}
+
+.contentAnimation:hover .hoja {
+  transform: translateY(-20px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.571);
+}
+
+.contentAnimation:hover .hoja2 {
+  transform: translateY(300px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.571);
+}

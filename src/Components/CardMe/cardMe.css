@@ -1,0 +1,67 @@
+.cardMeSytle {
+    position: relative;
+    width: 100px;
+    margin: 25px;
+    padding: 30px;
+    background-color: rgb(22, 137, 123);
+    background-image: url('../../assets/paper-texture.jpg');
+    background-blend-mode:multiply;
+}
+
+.cardMeSytle::after {
+  content: '';
+  position: absolute;
+  top: -5px;   
+  left: -5px;  
+  right: -5px;
+  bottom: -5px; 
+  border: 10px solid green; 
+  pointer-events: none;
+  border-image: url('../../assets/lapiz.svg') 30 stretch; 
+   z-index: 2;
+}
+
+.title3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 18px;
+    margin: 0px 0px 20px 0px;
+    padding: 0px;
+}
+
+.p3 {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    text-align: justify;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.cardMeSytle.purple {
+    background-color: #c6a3d2;
+    color: #571b78;
+    
+}
+
+.cardMeSytle.purple::after {
+    border-image: url('../../assets/lila.svg') 30 stretch; 
+}
+
+
+.cardMeSytle.green {
+    background-color: #92c3c0;
+    color: #1b6278;
+}
+
+.cardMeSytle.green::after {
+    border-image: url('../../assets/aqua.svg') 30 stretch; 
+}
+
+.cardMeSytle.little {
+    width: 50%; 
+}
+
+.cardMeSytle.medium {
+    width: 60%;
+}

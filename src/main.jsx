@@ -1,10 +1,13 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.jsx'
+import { Header } from './Components/Header/Header.jsx'
+import { FullSections } from './Sections/FullSections/FullSections.jsx'
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <FullSections></FullSections>
+    
   </StrictMode>,
 )

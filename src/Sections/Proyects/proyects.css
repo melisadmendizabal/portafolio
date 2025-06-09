@@ -1,0 +1,39 @@
+.proyectStyle{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+
+    background-color: #f6ebd5;
+    background-image: url('../../assets/paper-texture.jpg');
+    background-blend-mode: multiply;
+
+}
+
+.title{
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(93, 33, 76);
+}
+
+.carpetas{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+    z-index: 10;
+
+}
+
+.proyectStyle:last-child{
+  z-index: 1;
+}
+
+@media (max-width: 1000px) {
+  .carpetas {
+    flex-direction: column; 
+    align-items: center; 
+  }
+}
